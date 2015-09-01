@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Esto es practica CSS
+			</title>
+			<style>
+			/* Reglas */
+			h1{
+				font-family: Sans-serif;
+				color:#FF0000;
+				
+			}
+			/* Cada que ponga h1 en el body se aplica lo de style*/
+			.titulo_azul{
+				color: blue;
+			}
+			/*Selector Id */
+				#three{
+					color: Green;
+				}
+				.primer_elemento{
+					color: grey;
+				}
+				 /*SPan agrupa cosas en una sola linea */ /*div agrupa en un bloque (Ver los borders)*/
+
+				 /* Selector Descendiente */ /*father son like */
+				div span{
+					color: purple;
+				}
+				div{
+					border: 2px solid orange;
+				}
+				span{
+					border: 1px solid red;
+				}
+					.articulo_principal span{
+						font-size: 30px;
+					}
+					.articulo_principal span:hover{
+						color:red;
+						font-size: 50px;
+					}
+					.articulo_secundario p{
+						color: yellow;
+					}
+			</style>
+	</head>
+	<body>
+<h1> Titulo </h1>
+<h1 class='titulo_azul'> Titulo 2 </h1>   
+<ul>
+	<li id="one" class="primer_elemento">Element 1</li>
+	<li id="two">Element 2</li>
+	<li id="three">Element 3</li>
+</ul>
+<span> Este es un span </span>
+<span>OTro span</span>
+<div class="articulo_principal">
+<span>Esto debe ser purple</span>Esto es un div
+</div>
+<br>
+<div class="articulo_secundario">
+<span>Secundario</span>
+<p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+</p>
+</div>
+
+	</body>
+	</html>	
